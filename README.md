@@ -9,5 +9,7 @@ I added more time block rows that go on all the way until 17:00 or 5pm. I also h
 
 The page now displays the current date at the top of the page.
 
+I changed the look of the buttons so they are more centered and changed the hours listed from military time to the am/pm format. Also the text entered is stored in local storage when save is clicked.
+
 ## Instalation
 To install my project, I created a repository for it on Github. After that I cloned the repository onto my desktop. I then copied the folders from my class repository and pasted them into my folder. From there, I opened the assignments into a serperate folder.
