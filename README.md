@@ -13,6 +13,8 @@ I changed the look of the buttons so they are more centered and changed the hour
 
 Text entered in time blocks still remain after page is refreshed due to the localStorage get item tool. Also removed needed steps at the top for cleaner looking code. Also added some CSS styling to the page.
 
+Project link: https://sajalagn123.github.io/hw5-SajalAgn-Workdayscheduler/
+
 
 ![hw5screenshot](https://user-images.githubusercontent.com/98942793/164640291-3cc8273c-d14e-46a4-9847-331b73d4f1eb.JPG)
 
