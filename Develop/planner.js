@@ -1,10 +1,3 @@
-// Step : Have current day displayed at the top of the calender
-// Step : Have timeblocks for standard business hours presented
-// Step : Have time blocks color coded to indicate whether they are in the past, present, or future
-// Step : Make user able to enter an event when they click on a timeblock
-// Step 5: Have text be saved in local storage when user clicks on an event
-// Step 6: Have content user entered remain when the page is refreshed
-
 // Displays today's date at the top of the page
 var todayDate = moment().format("dddd, MMMM Do, YYYY");
 $('#currentDay').append(todayDate);
@@ -17,10 +10,14 @@ function makeTimeblocks(hour, existingTodo = ""){
   var threeTime = "future";
   if(currentHour > hour + 9) threeTime = "past";
   if(currentHour === hour + 9) threeTime = "present"
+  var hourName = hours[hour];
+  var existingTodo = localStorage.getItem(hourName);
+  if(!existingTodo) existingTodo = ""
+  console.log("saved task: ", hourName, existingTodo);
   $(".container").append($(
     `<div class="row time-block">
-        <div class="hour col-1">${hours[hour]}</div>
-        <textarea name="" id="${hours[hour]}" cols="30" rows="3" class="description col-9 ${threeTime}">${existingTodo}</textarea>
+        <div class="hour col-1">${hourName}</div>
+        <textarea name="" id="${hourName}" cols="30" rows="3" class="description col-9 ${threeTime}">${existingTodo || ""}</textarea>
         <button class="btn saveBtn col-2">Save</button>
   </div>`));
 }
