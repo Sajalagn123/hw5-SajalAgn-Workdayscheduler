@@ -11,5 +11,12 @@ The page now displays the current date at the top of the page.
 
 I changed the look of the buttons so they are more centered and changed the hours listed from military time to the am/pm format. Also the text entered is stored in local storage when save is clicked.
 
+Text entered in time blocks still remain after page is refreshed due to the localStorage get item tool. Also removed needed steps at the top for cleaner looking code. Also added some CSS styling to the page.
+
+
+![hw5screenshot](https://user-images.githubusercontent.com/98942793/164640291-3cc8273c-d14e-46a4-9847-331b73d4f1eb.JPG)
+
+
 ## Instalation
 To install my project, I created a repository for it on Github. After that I cloned the repository onto my desktop. I then copied the folders from my class repository and pasted them into my folder. From there, I opened the assignments into a serperate folder.
+
